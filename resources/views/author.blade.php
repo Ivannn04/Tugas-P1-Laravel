@@ -9,11 +9,17 @@
         <tr>
             <th>ID</th>
             <th>Nama Author</th>
+            <th>Foto</th>
+            <th>Bio</th>
         </tr>
         @foreach($authors as $a)
         <tr>
             <td>{{ $a['id'] }}</td>
-            <td>{{ $a['nama'] }}</td>
+            <td>{{ $a['name'] }}</td>
+            <td>
+                <img src="{{ $a['photo'] }}" alt="{{ $a['name'] }}" width="80">
+            </td>
+            <td>{{ $a['bio'] }}</td>
         </tr>
         @endforeach
     </table>

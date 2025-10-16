@@ -9,11 +9,13 @@
         <tr>
             <th>ID</th>
             <th>Nama Genre</th>
+            <th>Deskripsi</th>
         </tr>
         @foreach($genres as $g)
         <tr>
             <td>{{ $g['id'] }}</td>
-            <td>{{ $g['nama'] }}</td>
+            <td>{{ $g['name'] }}</td>
+            <td>{{ $g['description'] }}</td>
         </tr>
         @endforeach
     </table>
